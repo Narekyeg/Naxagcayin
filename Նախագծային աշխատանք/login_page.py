@@ -10,9 +10,6 @@ root.title("Attendify")
 root.resizable(False,False)
 
 
-img=Image.open("Apple_logo.png")
-img1=Image.open("google_logo.png")
-img2=Image.open("email_symbol.png")
 # Labels
 CTkLabel(master=root, text="Բարի Գալուստ Attendify!", font=("Times", 15)).place(x=100, y=10)
 CTkLabel(master=root, text="Գրանցվեք, որպեսզի մուտք գործեք ձեր հաշիվը", font=("Times", 15)).place(x=25, y=55)
@@ -41,9 +38,4 @@ def login():
 
 # Buttons
 CTkButton(master=root, text="Login!",command=login,width=200,corner_radius=16,hover_color="#2634ad").place(x=75, y=300)
-CTkButton(master=root,text="Continue with Apple",width=200,corner_radius=16, image=CTkImage(dark_image=img,light_image=img),fg_color="#000000",hover_color="grey").place(x=75,y=340)
-CTkButton(master=root,text="Continue with Google",width=200,corner_radius=16, image=CTkImage(dark_image=img1,light_image=img1),fg_color="#ffffff",hover_color="#d6d6d4",text_color="#000000").place(x=75,y=380)
-CTkButton(master=root,text="Continue with E-mail",width=200,corner_radius=16, image=CTkImage(dark_image=img2,light_image=img2),fg_color="#ff0000",hover_color="#9e0303").place(x=75,y=420)
-
-
 root.mainloop()
