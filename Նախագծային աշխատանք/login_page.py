@@ -4,7 +4,6 @@ from PIL import Image
 import main_page
 
 root = CTk()
-root.iconbitmap("Apple_logo.png")
 root.geometry("350x600")
 root.title("Attendify")
 root.resizable(False,False)
@@ -39,3 +38,4 @@ def login():
 # Buttons
 CTkButton(master=root, text="Login!",command=login,width=200,corner_radius=16,hover_color="#2634ad").place(x=75, y=300)
 root.mainloop()
+
