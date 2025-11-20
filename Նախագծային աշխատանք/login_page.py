@@ -28,7 +28,7 @@ def login():
     password = password_entry.get()
 
     if username == "Admin" and password == "password":
-        # messagebox.showinfo("Success!", "You successfully logged in to your account!")
+        messagebox.showinfo("Success!", "You successfully logged in to your account!")
         root.destroy()
         main_page.open_main_window()
     else:
@@ -38,4 +38,5 @@ def login():
 # Buttons
 CTkButton(master=root, text="Login!",command=login,width=200,corner_radius=16,hover_color="#2634ad").place(x=75, y=300)
 root.mainloop()
+
 
